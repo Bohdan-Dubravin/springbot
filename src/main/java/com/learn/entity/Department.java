@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Department {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.UUID)
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private Long departmentId;
   private String departmentName;
   private String departmentAddress;
@@ -39,8 +39,7 @@ public class Department {
     this.departmentAddress = departmentAddress;
   }
 
-  public Department(Long departmentId, String departmentName, String departmentAddress) {
-    this.departmentId = departmentId;
+  public Department( String departmentName, String departmentAddress) {
     this.departmentName = departmentName;
     this.departmentAddress = departmentAddress;
   }
