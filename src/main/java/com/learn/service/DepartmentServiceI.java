@@ -10,4 +10,10 @@ public interface DepartmentServiceI {
   public Department saveDepartment(Department department);
 
   List<Department> getAllDepartments();
+
+  Department fetchDepartmentById(Long id);
+
+  void deleteById(Long id);
+
+ Department updateById(Long id, Department department);
 }
